@@ -74,7 +74,7 @@ request(url, function(error, res, body){
 
 app.get('/data', (req,respond)=>{
  // var data = data();
-var json = JSON.stringify(f);
+var json = JSON.parse(f);
  respond.send(json);
  // console.log(data);
 });
